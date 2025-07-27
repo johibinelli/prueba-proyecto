@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+.container {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  margin: 10px 0;
+  height: 150px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.ejercicio-2 .container {
+  display: flex;
+  align-items: center;
+}
+
+.ejercicio-3 .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ejercicio-4 .container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ejercicio-5 .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.ejercicio-6 .container {
+  display: flex;
+  justify-content: right;
+
+}
+
+.ejercicio-7 .container {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ejercicio-8 .container #double-width {
+  display: flex;
+  width: 7%;
+}
+
+.ejercicio-9 .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ejercicio-10 .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+
+}
