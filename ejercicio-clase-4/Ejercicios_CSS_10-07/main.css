@@ -1,0 +1,160 @@
+body {
+  background-color: #ccced1;
+  font-family: "Montserrat";
+
+}
+
+h1 {
+  color: #212121;
+  font-size: 45px;
+  letter-spacing: 0.2;
+
+}
+
+.ejercicio-1 {
+  background-color: aqua;
+}
+
+.ejercicio-1 p {
+  color: blue;
+}
+
+p {
+  color: #474747;
+  font-size: 24px;
+}
+
+.ejercicio-2 .link {
+  text-decoration: none;
+  color: chocolate;
+  background-color: aquamarine;
+  padding: 5px;
+  transition: color 2s;
+}
+
+.ejercicio-2 .link:hover {
+  color: black;
+}
+
+
+.ejercicio-2b {
+  text-decoration: none;
+
+}
+
+.ejercicio-2b:hover {
+  color: rgb(162, 24, 24);
+
+}
+
+.ejercicio-3 {
+  list-style-type: square;
+  margin-bottom: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(105, 63, 145);
+
+
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 13px -3px 43px -2px rgba(0, 0, 0, 0.54);
+  transition: 2s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+
+}
+
+.div-1 {
+  text-align: center;
+  background-color: rgb(158, 195, 182);
+  border-color: rgb(20, 108, 64);
+  border-style: solid;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 13px -3px 43px -2px rgba(0, 0, 0, 0.54);
+
+}
+
+.ejercicio-6 {
+  background-color: rgb(155, 11, 97);
+  color: aquamarine;
+  text-transform: uppercase;
+  text-shadow: 3px -2px 3px rgba(11, 11, 11, 0.61);
+  padding: 5px;
+  margin-top: 25px;
+  border-bottom: #212121;
+}
+
+.parrafo-1 {
+  text-align: left;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.parrafo-2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+.parrafo-3 {
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.imag-1 {
+
+  width: 600px;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 15%;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.imag-1:hover {
+  opacity: 0.50;
+}
+
+.imag-2 {
+
+  width: 500px;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 15%;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.imag-2:hover {
+  opacity: 0.50;
+}
+
+.sub-1 {
+  font-family: "Playfair Display";
+  font-size: 26px;
+  color: rgb(144, 9, 9);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#text-10 {
+  font-family: "Michroma";
+  background-color: burlywood;
+  padding: 10px;
+  letter-spacing: 0.2;
+  line-height: 1.5;
+  text-shadow: -2px 1px 0px rgba(164, 14, 14, 0.99);
+}
