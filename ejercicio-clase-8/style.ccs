@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -45,16 +45,6 @@ section .puntuacion {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.contenedor-valoracion-1 {
-  align: right
-
-}
-.contenedor-valoracion-2 {
-
-}
-.contenedor-valoracion-3 {
-
 }
 
 .puntuacion-titulares h2 {
