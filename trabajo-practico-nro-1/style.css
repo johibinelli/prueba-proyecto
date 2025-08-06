@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  width: fit-content 80%;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: end;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+
+}
+
+aside .sidebar {
+  vertical-align: top;
+  padding: 20px;
+  width: 20%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 80%;
+}
+
+.chat-header {
+  display: flex;
+
+}
+
+.chat-messages {
+  display: inline-block;
+
+
+
+}
