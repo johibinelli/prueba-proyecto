@@ -2,48 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-header {
+.chat-view {
   display: flex;
-  width: fit-content 80%;
   padding: 20px;
-  border-style: solid;
-  border-width: 1px;
-  justify-content: end;
-
 }
 
-body {
+.sidebar {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  padding: 20px;
-
-}
-
-aside .sidebar {
   vertical-align: top;
   padding: 20px;
   width: 20%;
+  line-height: 25px;
 }
 
-main {
+.chat {
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 80%;
-}
-
-.chat-header {
-  display: flex;
-
-}
-
-.chat-messages {
-  display: inline-block;
-
-
-
 }
