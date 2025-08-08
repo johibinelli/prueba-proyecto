@@ -15,7 +15,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 40px;
   width: 20%;
   line-height: 25px;
@@ -139,60 +139,73 @@ h3 {
   flex-direction: column;
   padding: 20px 20px 350px 20px;
   background-color: #f6f8f9;
-  line-height: 25px;
+  line-height: 15px;
   border-style: solid;
   border-width: 1px;
   border-top: none;
   border-color: #afb3b8;
+  gap: 5px;
+  border-radius: 5px;
+
+}
+
+.message-sent {
+  width: auto;
+  align-self: flex-end;
+  padding: 10px;
+  background-color: #e4f2f7;
+  border-radius: 10px;
 
 }
 
 .message-sent p {
   display: flex;
-  justify-content: flex-end;
-  padding: 5px;
-
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .timestamp-1 {
-  display: flex;
   font-size: 12px;
-  margin-right: 24%;
+}
 
-
+.message-received {
+  width: auto;
+  align-self: flex-start;
+  padding: 10px;
+  background-color: #ededed;
+  border-radius: 10px;
 }
 
 .message-received p {
   display: flex;
-  justify-content: flex-start;
-  padding: 5px;
-
+  width: 100%;
+  align-self: flex-start;
 }
 
 .timestamp-2 {
-  display: flex;
   font-size: 12px;
-  margin-right: 24%;
-  margin-bottom: 20px;
 
+}
+
+.message-received-1 {
+  width: auto;
+  align-self: flex-start;
+  padding: 10px;
+  background-color: #ededed;
+  border-radius: 10px;
 }
 
 .message-received-1 p {
   display: flex;
-  justify-content: flex-start;
-  padding: 5px;
-
+  width: 100%;
+  align-self: flex-start;
 
 }
 
 .timestamp-3 {
-  display: flex;
   font-size: 12px;
-  margin-right: 24%;
 
 }
-
-
 
 .chat-footer {
   display: flex;
