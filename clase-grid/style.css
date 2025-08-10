@@ -34,7 +34,7 @@
 
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr:;
+  grid-template-columns: repeat(4, 1fr);
   background-color: tomato;
   gap: 10px;
 }
@@ -46,4 +46,8 @@
 .container-grid div {
   background-color: yellow;
   padding: 10px;
+}
+
+.producto-1 {
+  grid-column: 1/3;
 }
