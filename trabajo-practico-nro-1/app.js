@@ -1,14 +1,14 @@
 const inputMessage = document.querySelector(".text")
-const sendbutton = document.querySelector(".send")
+const sendButton = document.querySelector(".send")
 const chatMessages = document.querySelector(".chat-messages")
 
-sendbutton.addEventListener("click", sendMessage)
+sendButton.addEventListener("click", sendMessage)
 
 
 function sendMessage() {
   const message = inputMessage.value
 
-  const divMessage = documentcreateElement("div")
+  const divMessage = document.createElement("div")
 
   divMessage.classList.add("message-sent")
 
@@ -16,7 +16,17 @@ function sendMessage() {
   text.textContent = message
 
   divMessage.appendChild(text)
+
+  //timestamp
+
+  const timestamp = document.createElement("p")
+  timestamp.classList.add("timestamp")
+  timestamp.textContent = new Date().toLocaleTimeString()
+
+  divMessage.appendChild(timestamp)
+
   chatMessages.appendChild(divMessage)
 
   inputMessage.value = ""
+
 }
