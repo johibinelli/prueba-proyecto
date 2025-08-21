@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat UI</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="chat-view">
+    <aside class="sidebar">
+      <input class="search-header" type="search" placeholder="Search..." class="search">
+      <ul class="contact-list">
+        <!-- <li class="contact">
+          <img src="./assets/avatar.jpeg" alt="imagen de perfil">
+          <div>
+            <h4>Vincent Porter</h4>
+            <span class="timestampred"></span>
+            <p class="status">left 7 mins ago</p>
+          </div>
+          </li> -->
+      </ul>
+    </aside>
+    <main class="chat">
+      <section class="chat-header">
+        <div class="chat-active">
+          <img src="assets/avatar.jpeg" alt="imagen de perfil">
+          <h3 id="user-active"> Aiden Chavez</h3>
+          <p>Last seen: 2 hours ago</p>
+        </div>
+        <div class="chat-actions">
+          <button title="Sacar foto">📷</button>
+          <button>🖼️</button>
+          <button>⚙️</button>
+          <button>❓</button>
+        </div>
+      </section>
+      <section class="chat-messages">
+        <div class="message-sent">
+          <p>Hi Aiden, how are you? How is the project coming along?</p>
+          <p class="timestamp-sent">10:10 AM, Today</p>
+        </div>
+        <div class="message-received">
+          <p>Are we meeting today?</p>
+          <p class="timestamp-received">10:12 AM, Today</p>
+        </div>
+        <div class="message-received">
+          <p>Project has been already finished and I have results to show you.</p>
+          <p class="timestamp-received">10:15 AM, Today</p>
+        </div>
+      </section>
+      <section class="chat-footer">
+        <input type="text" placeholder="Enter text here..." class="text" />
+        <button class="send">
+          ✈️</button>
+      </section>
+    </main>
+  </section>
+
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/template-string.js"></script>
+  <!--  <script src="./scripts/datos-complejos.js"></script> -->
+  <script src="./scripts/contacts-list.js"></script>
+</body>
+
+</html>

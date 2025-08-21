@@ -1,0 +1,26 @@
+const $contactsList = document.querySelector(".contact-list")
+
+const contacts = [
+  { name: "Vincent Porter", status: "offline", lastConnection: "7 mins ago" },
+  { name: "Aiden Chavez", status: "online", lastConnection: "now" },
+  { name: "Monica Ward", status: "online", lastConnection: "now" },
+  { name: "Vincent Porter", status: "offline", lastConnection: "7 mins ago" },
+  { name: "Aiden Chavez", status: "online", lastConnection: "now" },
+  { name: "Monica Ward", status: "online", lastConnection: "now" },
+  { name: "Vincent Porter", status: "offline", lastConnection: "7 mins ago" },
+  { name: "Aiden Chavez", status: "online", lastConnection: "now" },
+
+];
+
+contacts.forEach(function (contact) {
+  $contactsList.innerHTML += `
+  <li class="contact">
+  <img src="./assets/avatar.jpeg" alt="imagen de perfil">
+  <div>
+  <h4>${contact.name}</h4>
+  <p class="${contact.status === "offline" ? "status-offline" : "status-online"}">${contact.lastConnection}</p>
+  </div>
+  </li>
+  `
+
+})
