@@ -29,4 +29,21 @@ function sendMessage() {
 
   inputMessage.value = ""
 
+  // asincrono
+  setTimeout(function () {
+    const divMessage = document.createElement("div")
+    divMessage.classList.add("message-received")
+
+    const response = document.createElement("p")
+    response.textContent = `Recibido ${message}`
+
+    divMessage.appendChild(response)
+    chatMessages.appendChild(divMessage)
+
+  }, 5000)
+
+
 }
+
+
+
