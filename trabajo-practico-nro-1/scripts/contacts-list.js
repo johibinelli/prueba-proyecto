@@ -1,4 +1,5 @@
 const $contactsList = document.querySelector(".contact-list")
+const $searchInput = document.querySelector("#searchInput")
 
 const contacts = [
   { name: "Vincent Porter", status: "offline", lastConnection: "7 mins ago" },
@@ -9,16 +10,20 @@ const contacts = [
   { name: "Johanna Binelli", status: "online", lastConnection: "now" },
 ];
 
+function renderContacts(ListOfContacts) {
+  $contactsList.innerHTML = ""
 
-contacts.forEach(function (contact) {
-  let className = ""
-  if (contact.status === "online") {
-    className = "status-online"
-  } else {
-    className = "status-offline"
-  }
 
-  $contactsList.innerHTML += `
+  ListOfContacts.forEach(function (contact) {
+    let className = ""
+
+    if (contact.status === "online") {
+      className = "status-online"
+    } else {
+      className = "status-offline"
+    }
+
+    $contactsList.innerHTML += `
   <li class="contact">
   <img src="./assets/avatar.jpeg" alt="imagen de perfil">
   <div>
@@ -27,8 +32,27 @@ contacts.forEach(function (contact) {
   </div>
   </li>
   `
+  })
+}
 
-})
+renderContacts(contacts)
+
+$searchInput.addEventListener("input", searchContacts)
+
+function searchContacts() {
+  const inputValue = $searchInput.value.toLowerCase()
+
+  const filteredContacts = []
+
+  contacts.forEach(function (contact) {
+    const contactNameToLowerCase = contact.name.toLowerCase()
+
+    if (contactNameToLowerCase.includes(inputValue)) {
+      filteredContacts.push(filteredContacts)
+    }
+
+  })
 
 
 
+}

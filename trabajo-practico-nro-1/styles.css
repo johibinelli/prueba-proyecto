@@ -92,13 +92,17 @@ p {
   display: inline-block;
   content: "•";
   color: red;
-
+  font-size: 15px;
+  padding: 5px;
 
 }
 
 .status-online::before {
+  display: inline-block;
   content: "•";
   color: green;
+  font-size: 15px;
+  padding: 5px;
 
 }
 
