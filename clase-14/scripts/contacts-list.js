@@ -12,7 +12,16 @@ const contacts = [
 
 ];
 
+
 contacts.forEach(function (contact) {
+  let className = ""
+  if (contact.status === "online") {
+    className = "status-online"
+  } else {
+    className = "status-offline"
+  }
+
+
   $contactsList.innerHTML += `
   <li class="contact">
   <img src="./assets/avatar.jpeg" alt="imagen de perfil">
