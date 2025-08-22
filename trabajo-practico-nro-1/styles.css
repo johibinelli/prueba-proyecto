@@ -44,8 +44,12 @@
 
 }
 
+.contact-list p {
+  font-size: 12px;
+
+}
+
 .contact-list :hover {
-  padding: 5px;
   background-color: #efefef;
   border-radius: 10px;
 
@@ -79,19 +83,20 @@ p {
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  gap: 15px;
+  gap: 20px;
   line-height: 15px;
 
 }
 
-.timestampred::before {
+.status-offline::before {
   display: inline-block;
   content: "•";
   color: red;
 
+
 }
 
-.timestampgreen::before {
+.status-online::before {
   content: "•";
   color: green;
 
