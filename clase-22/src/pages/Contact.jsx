@@ -8,7 +8,13 @@ const Contact = () => {
       <Header />
       <main>
         <Banner />
-      </main>
+        <section>
+          <form>
+            <input type="text" name="" id="" />
+            <button>Enviar</button>
+          </form>
+        </section>
+      </main >
       <Footer />
     </>
   )
